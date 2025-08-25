@@ -2,8 +2,8 @@
 title: "No More Scratches: Nylon Bending Blocks for Sheet-Metal Brakes"
 slug: sls-pa12-bending-protection-blocks
 description: "SLS PA12 bending protection blocks for press brakes: scratch-free contact surfaces, bend-radius inserts, and quick-swap profiles for thin-gauge metals."
-date: 2025-08-22T00:00:00Z
-lastmod: 2025-08-22T00:00:00Z
+date: 2025-08-30T00:00:00Z
+lastmod: 2025-08-30T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
