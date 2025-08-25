@@ -2,8 +2,8 @@
 title: "Nuclear-Plant Safe Tools: Non-Magnetic Nylon for Inspection and Repair"
 slug: sls-pa12-non-magnetic-tools-nuclear-maintenance
 description: "Non-magnetic SLS PA12 tools for nuclear maintenance: radiation-adjacent considerations, torque limits, and contamination-safe design."
-date: 2025-08-22T00:00:00Z
-lastmod: 2025-08-22T00:00:00Z
+date: 2025-08-19T00:00:00Z
+lastmod: 2025-08-19T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
