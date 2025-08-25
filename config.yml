@@ -132,19 +132,13 @@ params:
 
   # —— 站内搜索（Fuse.js 调优项；需要你有 content/search.md with `layout: "search"`）——
   fuseOpts:
-    isCaseSensitive: false
+    isCaseSensitive: true
     shouldSort: true
     distance: 1000
     threshold: 0.4               # 匹配阈值，越小越严格
     minMatchCharLength: 0
     limit: 10
     keys: ["title", "permalink", "summary", "content"]
-
-  # —— “编辑此页/建议修改”入口（需把 URL 改成你的仓库地址）——
-  editPost:
-    URL: "https://github.com/nylon3dprint/nylon3dprint.com/edit/main"  # ← 换成你的仓库
-    Text: "Suggest changes"                                            # 页内按钮文字
-    appendFilePath: true                                               # 自动附加文章文件相对路径
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
