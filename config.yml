@@ -54,7 +54,7 @@ params:
   favicon: "/images/favicon.ico"              # head.html 里会读取此字段
   ShowCodeCopyButtons: true                   # 代码块一键复制
   ShowPostNavLinks: true                      # 开启文末上一篇/下一篇
-  ShowBreadCrumbs: false                       # 开启面包屑导航
+  ShowBreadCrumbs: true                       # 开启面包屑导航
   math: true                                  # ✅ 全站启用 KaTeX（如某篇不需要可在 front matter 里设 math:false）
 
   # —— 顶部站点标签/Logo（主题原生 label）——
