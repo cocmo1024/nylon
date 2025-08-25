@@ -40,15 +40,44 @@ module:
 params:
   env: production                             # 当前构建环境，用于控制 robots 等
   defaultTheme: "auto"                        # 自动切换亮/暗模式
+  disableThemeToggle: false                   # ✅ 保留亮/暗模式切换按钮
   showShareButtons: true                      # 显示社交分享按钮
   showReadingTime: true                       # 显示阅读时长
+  ShowWordCount: true                         # ✅ 显示字数
   ShowToc: true                               # 启用文章内目录（可在文章 front matter 单独关闭）
+  UseHugoToc: false                           # ✅ 使用主题内置 ToC（而非 Hugo 原生 ToC）
+  TocOpen: false                              # ✅ 目录默认不展开（长文更清爽）
+  DateFormat: "Jan 2, 2006"                   # ✅ 统一日期格式
+  ShowFullTextinRSS: true                     # ✅ RSS 输出全文
+  ShowRssButtonInSectionTermList: true        # ✅ 列表页显示 RSS 按钮
   author: "Nylon3DPrint Team"                 # 默认作者（用于结构化数据和文章作者信息）
   favicon: "/images/favicon.ico"              # head.html 里会读取此字段
   ShowCodeCopyButtons: true                   # 代码块一键复制
   ShowPostNavLinks: true                      # 开启文末上一篇/下一篇
-  ShowBreadCrumbs: true                       # （可选）开启面包屑导航
+  ShowBreadCrumbs: true                       # 开启面包屑导航
+  math: true                                  # ✅ 全站启用 KaTeX（如某篇不需要可在 front matter 里设 math:false）
 
+  # —— 顶部站点标签/Logo（主题原生 label）——
+  label:
+    text: "Nylon3DPrint"                      # ✅ 顶部品牌文字
+    icon: "/images/logo-square.webp"          # ✅ 顶部品牌图标（与 publisher.logo 一致更好）
+    iconHeight: 35
+
+  # —— 社交图标（按需补充）——
+  socialIcons:
+    - name: email
+      url: "mailto:info@nylon3dprint.com"
+    # - name: github
+    #   url: "https://github.com/nylon3dprint"
+    # - name: linkedin
+    #   url: "https://www.linkedin.com/company/nylon3dprint"
+
+  # —— 封面图展示策略（列表/正文）——
+  cover:
+    responsiveImages: true       # ✅ 生成响应式封面
+    linkFullImages: true         # ✅ 点击封面可放大
+    hiddenInList: false
+    hiddenInSingle: false
 
   # ----- ✅ Publisher / Logo（用于 JSON-LD：Organization.logo）-----
   publisher:
@@ -62,6 +91,8 @@ params:
   # ----- ✅ 结构化数据补充 -----
   schema:
     publisherType: "Organization"             # 也可改为 "Person"
+    sameAs:                                   # ✅ 知识图谱外链（按需补充官方账号）
+      - "https://www.nylon3dprint.com/"
 
   # ----- ✅ 全站 SEO 元信息 -----
   description: "Industrial nylon 3D printing service (MJF & SLS) for PA12/PA11 parts. Durable, corrosion-resistant functional prototypes and production components for water treatment, robotics, automotive, and manufacturing."
@@ -91,12 +122,29 @@ params:
   # （可选）主题色（head.html 会读取）
   assets:
     theme_color: "#2e2e33"
+    msapplication_TileColor: "#2e2e33"    # ✅ Windows 磁贴颜色（PWA/Manifest 相关）
 
   # ----- ✅ 首页欢迎区域（模块化） -----
   homeInfoParams:
     Content: |
       Nylon3DPrint.com is a curated collection of nylon 3D printing case studies and knowledge resources. 
       This site is part of our printing services, and you can contact us directly to start your 3D printing project: info@nylon3dprint.com.
+
+  # —— 站内搜索（Fuse.js 调优项；需要你有 content/search.md with `layout: "search"`）——
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    distance: 1000
+    threshold: 0.4               # 匹配阈值，越小越严格
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+  # —— “编辑此页/建议修改”入口（需把 URL 改成你的仓库地址）——
+  editPost:
+    URL: "https://github.com/nylon3dprint/nylon3dprint.com/edit/main"  # ← 换成你的仓库
+    Text: "Suggest changes"                                            # 页内按钮文字
+    appendFilePath: true                                               # 自动附加文章文件相对路径
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
@@ -149,6 +197,9 @@ params:
         ad-tags-top: "6666666666"
         ad-list-interval: "7777777777"
 
+  # —— 评论（需要先在 partials/comments.html 接入 Disqus/Giscus/Utterances 之一）——
+  comments: false                 # 默认关闭；接入完成后可改为 true 开启全站评论
+
 # ========================
 # ✅ 分页设置（替代旧版 paginate 字段）
 # ========================
@@ -170,6 +221,10 @@ menu:
     - name: "Tags"
       url: "/tags/"
       weight: 3
+    # 👉 如需“Search”导航项：新增 content/search.md（front matter: layout:"search"），再在这里补：
+    # - name: "Search"
+    #   url: "/search/"
+    #   weight: 4
 
 # ========================
 # ✅ 自动相关文章推荐配置
