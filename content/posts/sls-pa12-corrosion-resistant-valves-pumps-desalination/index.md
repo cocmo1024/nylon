@@ -2,8 +2,8 @@
 title: "Desalination Maintenance: Corrosion-Resistant Nylon Valves and Pump Components"
 slug: sls-pa12-corrosion-resistant-valves-pumps-desalination
 description: "SLS PA12 corrosion-resistant valves and pump parts for desalination plants: material selection, sealing strategies, service life, and cost/lead-time gains."
-date: 2025-08-25T00:00:00Z
-lastmod: 2025-08-25T00:00:00Z
+date: 2025-08-24T00:00:00Z
+lastmod: 2025-08-24T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
