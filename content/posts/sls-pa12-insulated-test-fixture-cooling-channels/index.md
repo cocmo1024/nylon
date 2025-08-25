@@ -2,8 +2,8 @@
 title: "Battery-Pack Safety Testing: Insulated Nylon Fixtures with Integrated Cooling Channels"
 slug: sls-pa12-insulated-test-fixture-cooling-channels
 description: "SLS PA12 insulated test fixtures for battery packs: HV isolation, integrated cooling channels, and repeatable clamping geometry."
-date: 2025-08-19T00:00:00Z
-lastmod: 2025-08-19T00:00:00Z
+date: 2025-08-20T00:00:00Z
+lastmod: 2025-08-20T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
