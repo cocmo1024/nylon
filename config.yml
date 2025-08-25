@@ -136,12 +136,12 @@ params:
 
     # ----- ✅ Google AdSense 配置（adsense 模式专用） -----
     adsense:
-      client: "ca-pub-xxxxxxxxxxxxxxxx"
+      client: "ca-pub-6017297149672924"
       slots:
         ad-top: "1111111111"
         ad-bottom: "2222222222"
         ad-inline: "3333333333"
-        ad-home-inline: "4444444444"
+        ad-home-inline: "9423375431"
         ad-tags: "5555555555"
         ad-tags-top: "6666666666"
         ad-list-interval: "7777777777"
