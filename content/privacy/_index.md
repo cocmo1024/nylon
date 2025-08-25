@@ -22,6 +22,7 @@ At **Nylon3DPrint.com**, your privacy is important to us. This Privacy Policy ex
 ## 1. Information We Collect
 - **Non-Personal Data**: We may collect standard log files (e.g., browser type, operating system, referring site, date/time, and pages visited) to improve site performance.  
 - **Cookies**: We use cookies to store visitor preferences, analyze traffic, and enhance user experience.  
+- **Business Inquiries**: If you begin consulting with us about nylon 3D printing services, we may request specific product drawings or design files. These are required to analyze your needs and assess feasibility. Providing such files is an obvious and reasonable step before any business relationship can begin.  
 
 We do **not** collect sensitive personal information (such as financial details, ID numbers, or health records).
 
@@ -42,6 +43,7 @@ We use collected data to:
 - Understand audience interests and performance metrics  
 - Display relevant advertising (our own and third-party)  
 - Ensure site security and prevent misuse  
+- Evaluate business feasibility based on drawings or files you voluntarily provide  
 
 ---
 
