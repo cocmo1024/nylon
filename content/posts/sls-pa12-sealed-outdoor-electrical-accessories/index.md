@@ -26,45 +26,6 @@ tags:
   - IP-rating
 ---
 
-{
-"protocol\_version": "14.6-LTS",
-"run\_profile": "full",
-"goal": "lead\_generation",
-"region": "us",
-"target\_audience": "Electrical & mechanical engineers; outdoor equipment OEMs; field service teams",
-"length\_profile": "optimal\_longform",
-"confidence\_score": 0.81,
-"metrics\_estimation": {
-"readability\_score": 8.4,
-"uniqueness\_score": 0.98,
-"style\_balance": { "technical": 0.65, "practical": 0.25, "commercial": 0.10 },
-"emotional\_entropy": 0.48
-},
-"sources\_freshness": { "avg\_days\_old\_est": 1900, "notes": "Standards and material datasheets are relatively stable; vendor pages updated periodically." },
-"citations": \[
-"[https://www.iec.ch/ip-ratings](https://www.iec.ch/ip-ratings)",
-"[https://en.wikipedia.org/wiki/IP\_code](https://en.wikipedia.org/wiki/IP_code)",
-"[https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=37856](https://www.shopulstandards.com/ProductDetail.aspx?UniqueKey=37856)",
-"[https://www.nema.org/docs/default-source/products-document-library/nema-enclosure-types.pdf](https://www.nema.org/docs/default-source/products-document-library/nema-enclosure-types.pdf)",
-"[https://keystonecompliance.com/iec-60529/](https://keystonecompliance.com/iec-60529/)",
-"[https://keystonecompliance.com/ipx5-ipx6-water-jets/](https://keystonecompliance.com/ipx5-ipx6-water-jets/)",
-"[https://amade-tech.com/product/ipx-5-ipx-6-rain-test-chamber/](https://amade-tech.com/product/ipx-5-ipx-6-rain-test-chamber/)",
-"[https://store.eos.info/products/pa-2200-polyamide-12](https://store.eos.info/products/pa-2200-polyamide-12)",
-"[https://www.eos.info/polymer-solutions/polymer-materials/data-sheets/mds-pa-2200](https://www.eos.info/polymer-solutions/polymer-materials/data-sheets/mds-pa-2200)",
-"[https://cimquest-inc.com/resource-center/HP/Materials/HP-PA12-Datasheet.pdf](https://cimquest-inc.com/resource-center/HP/Materials/HP-PA12-Datasheet.pdf)",
-"[https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=4AA8-2745ENW](https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=4AA8-2745ENW)",
-"[https://dyemansion.com/products/powerfuse-s/](https://dyemansion.com/products/powerfuse-s/)",
-"[https://amtechnologies.com/products/vapor-smoothing/](https://amtechnologies.com/products/vapor-smoothing/)",
-"[https://www.parker.com/content/dam/Parker-com/Literature/O-Ring-Division-Literature/ORD-5700.pdf](https://www.parker.com/content/dam/Parker-com/Literature/O-Ring-Division-Literature/ORD-5700.pdf)",
-"[https://tools.rogerscorp.com/documents/944/hpf/poron/industrial/Sealing-and-Gasketing-Design-Guide.aspx](https://tools.rogerscorp.com/documents/944/hpf/poron/industrial/Sealing-and-Gasketing-Design-Guide.aspx)",
-"[https://www.gore.com/solutions-waterproof-enclosures](https://www.gore.com/solutions-waterproof-enclosures)",
-"[https://www.gore.com/products/gore-protective-vents-for-lighting-enclosures](https://www.gore.com/products/gore-protective-vents-for-lighting-enclosures)",
-"[https://law.resource.org/pub/us/cfr/ibr/006/ul.746c.1995.pdf](https://law.resource.org/pub/us/cfr/ibr/006/ul.746c.1995.pdf)",
-"[https://www.iso.org/standard/55481.html](https://www.iso.org/standard/55481.html)",
-"[https://www.micomlab.com/micom-testing/astm-g155/](https://www.micomlab.com/micom-testing/astm-g155/)"
-]
-}
-
 # Outdoor Electrical Gear: Sealed Nylon Accessories to Raise IP Ratings
 
 ## Executive summary
