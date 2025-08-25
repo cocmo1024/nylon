@@ -2,8 +2,8 @@
 title: "Wind-Turbine Cable Tie Mounts: FR Nylon for Generator Housings"
 slug: sls-pa12-fr-cable-tie-mounts-wind-turbine
 description: "Flame-retardant SLS PA12-FR cable-tie mounts for wind-turbine generators: UL/EN requirements, load retention, and installation efficiency."
-date: 2025-08-25T00:00:00Z
-lastmod: 2025-08-25T00:00:00Z
+date: 2025-08-23T00:00:00Z
+lastmod: 2025-08-23T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
