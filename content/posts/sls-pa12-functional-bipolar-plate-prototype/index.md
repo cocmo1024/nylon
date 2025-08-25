@@ -2,8 +2,8 @@
 title: "Fuel-Cell Development: Functional Nylon Bipolar Plate Prototypes"
 slug: sls-pa12-functional-bipolar-plate-prototype
 description: "Functional SLS PA12 bipolar plate prototypes for fuel-cell R&D: flow-field fidelity, sealing concepts, and thermal/chemical exposure limits."
-date: 2025-08-25T00:00:00Z
-lastmod: 2025-08-25T00:00:00Z
+date: 2025-08-22T00:00:00Z
+lastmod: 2025-08-22T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
