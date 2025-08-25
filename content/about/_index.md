@@ -1,36 +1,37 @@
 ---
 title: "About"
-description: "OOCXX — A blog exploring systemized personal growth, trading strategies, and scalable site networks."
-date: 2025-08-10
-lastmod: 2025-08-10
+description: "Nylon3DPrint.com — A curated collection of nylon 3D printing case studies, knowledge resources, and industry insights."
+date: 2025-08-25
+lastmod: 2025-08-25
 keywords:
-  - OOCXX
-  - personal growth
-  - site networks
-  - systemized execution
-  - passive income
-  - automation
-  - SEO
+  - nylon 3D printing
+  - MJF nylon parts
+  - SLS PA12 PA11
+  - carbon fiber nylon printing
+  - ESD nylon 3D printing
+  - glass-filled nylon
+  - industrial 3D printing
+  - case studies
 robots: index, follow
 ---
 ---
-**OOCXX** is a systemized tool for personal growth and execution — the starting point of a future-oriented content network.  
-The core idea is simple: **use a better system to rewrite the game**.
+**Nylon3DPrint.com** is a curated collection of case studies and knowledge resources for nylon 3D printing — a specialized content hub under [Nylon3DP.com](https://www.nylon3dp.com/).  
+The mission is clear: **document real-world applications and share practical knowledge about functional nylon parts.**
 
 ---
 
 ### 🎯 Current Focus Areas
-- **Site Networks × Ad Revenue**  
-  Building unified multi-site systems with Hugo Modules to explore content-driven passive income models.  
+- **Case Studies × Industry Applications**  
+  Highlighting how MJF and SLS nylon printing powers solutions in automotive, robotics, medical devices, water treatment, and beyond.  
 
-- **Financial Trading × Strategic Execution**  
-  Focused on Forex, Gold, and asset correlations — developing a personal trading engine with capital control and sustainable growth.  
+- **Materials × Technical Insights**  
+  Covering PA12, PA11, carbon-fiber reinforced nylon, ESD-safe formulations, and glass-filled composites — with performance, cost, and design trade-offs.  
 
-- **Minimalist Business × Micro-Model Experiments**  
-  Testing low-cost, high-leverage business models — fast to launch, easy to validate, designed to scale.  
+- **Knowledge × Practical Guides**  
+  Sharing design guidelines, troubleshooting tips, and manufacturing strategies for engineers and product teams.  
 
 ---
 
-**Keywords**: AI · Systems · Minimalism · Leverage · Automation · SEO · Replicability
+**Keywords**: Nylon 3D Printing · MJF · SLS · Functional Parts · Industrial Applications · Knowledge Hub · Case Studies  
 
-OOCXX = **Out Of Convention × Expression × Execution**
+Nylon3DPrint = **Nylon × Applications × Knowledge × Reliability**
