@@ -197,25 +197,6 @@ Match thread standard (**NPT** is common) and choose **IP68 glands** with the ri
 
 ---
 
-## Schema.org (JSON-LD)
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Outdoor Electrical Gear: Sealed Nylon Accessories to Raise IP Ratings",
-  "about": ["SLS PA12", "IP66", "IP67", "outdoor electrical enclosures", "gaskets", "cable glands", "vapor smoothing"],
-  "audience": { "@type": "Audience", "audienceType": "Electrical & mechanical engineers; field installers" },
-  "author": { "@type": "Person", "name": "szcomo" },
-  "inLanguage": "en-US",
-  "genre": "Engineering",
-  "keywords": "nylon 3d printing service, sealed outdoor electrical accessories, IP66 IP67 enclosure upgrades, gasket and O-ring design, weatherproof nylon parts, UV and moisture exposure, fastener sealing strategies, SLS PA12 enclosure accessories, industrial 3D printing for electrical equipment, field retrofit components, reliability in harsh environments, nylon 3d printing service for outdoor electrical gear",
-  "publisher": { "@type": "Organization", "name": "OMEGA-尼龙" }
-}
-```
-
----
-
 ### Call to action
 
 Send your **STEP files** and a short note on your target rating (IP66 or IP67), cable sizes, and photos of the install. We’ll return a **sealed-accessory kit** proposal with DFM notes and a pre-test checklist so you can walk into the lab with confidence.
