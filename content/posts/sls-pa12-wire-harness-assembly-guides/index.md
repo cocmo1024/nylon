@@ -208,10 +208,9 @@ Ready to convert your board into **SLS PA12 routing guides**? Email **[info@nylo
 
 ---
 
-### Disclaimer (American English)
+### Disclaimer
 
-If you apply any examples or patterns from this article to your own project, **perform a careful engineering evaluation first**. We cannot accept liability for any losses that result from adopting ideas here without proper review and testing. (All wording above is in American English.)
-
+If you apply any examples or patterns from this article to your own project, **perform a careful engineering evaluation first**. We cannot accept liability for any losses that result from adopting ideas here without proper review and testing.
 [1]: https://www.eos.info/polymer-solutions/polymer-materials/multipurpose?utm_source=chatgpt.com "Polyamide 12 (PA 12) Powders for 3D Printing"
 [2]: https://prototek.com/wp-content/uploads/2023/04/TDS-Nylon-12.pdf?utm_source=chatgpt.com "PA 2200 Performance 1.0 PA12 EOS GmbH"
 [3]: https://www.shapeways.com/wp-content/uploads/2021/01/HP-MJF-PA-12-Data-sheet.pdf?srsltid=AfmBOopDGhW2A4i70vWu0gsnt4G7OLqWjRZng5KqcJ4e-IdNsGujzuBD&utm_source=chatgpt.com "HP 3D High Reusability PA 12"
