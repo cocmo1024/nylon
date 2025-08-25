@@ -206,10 +206,9 @@ menu:
     - name: "Tags"
       url: "/tags/"
       weight: 3
-    # 👉 如需“Search”导航项：新增 content/search.md（front matter: layout:"search"），再在这里补：
-    # - name: "Search"
-    #   url: "/search/"
-    #   weight: 4
+    - name: "Search"
+      url: "/search/"
+      weight: 4
 
 # ========================
 # ✅ 自动相关文章推荐配置
