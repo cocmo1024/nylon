@@ -92,8 +92,7 @@ params:
   # ----- ✅ 首页欢迎区域（模块化） -----
   homeInfoParams:
     Content: |
-      On-demand nylon 3D printing (MJF & SLS) — PA12/PA11, carbon-fiber, ESD, and glass-filled options.
-      Production-grade functional parts with fast lead times and consistent quality.
+      A curated collection of nylon 3D printing case studies and knowledge resources.
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
