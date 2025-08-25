@@ -2,8 +2,8 @@
 title: "Hydro Turbine CFD Validation: High-Accuracy Nylon Scale Models"
 slug: sls-pa12-turbine-model-cfd-validation
 description: "High-accuracy SLS PA12 turbine scale models for CFD and tunnel testing: tolerance controls, surface finish, and instrumentation ports."
-date: 2025-08-29T00:00:00Z
-lastmod: 2025-08-29T00:00:00Z
+date: 2025-08-24T00:00:00Z
+lastmod: 2025-08-24T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
