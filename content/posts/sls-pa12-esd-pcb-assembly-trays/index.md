@@ -2,8 +2,8 @@
 title: "Protecting PCBs: ESD-Safe Nylon Assembly Trays"
 slug: sls-pa12-esd-pcb-assembly-trays
 description: "ESD-safe nylon PCB assembly trays: component retention, labeling, stackability, and SMT/hand-assembly flow improvements with robust, reusable tooling."
-date: 2025-08-22T00:00:00Z
-lastmod: 2025-08-22T00:00:00Z
+date: 2025-08-30T00:00:00Z
+lastmod: 2025-08-30T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
