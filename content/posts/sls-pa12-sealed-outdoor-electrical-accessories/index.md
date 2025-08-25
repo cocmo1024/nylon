@@ -2,8 +2,8 @@
 title: "Outdoor Electrical Gear: Sealed Nylon Accessories to Raise IP Ratings"
 slug: sls-pa12-sealed-outdoor-electrical-accessories
 description: "Sealed SLS PA12 accessories for outdoor electrical equipment: gasket design, fasteners, and IP rating improvements under weathering."
-date: 2025-08-29T00:00:00Z
-lastmod: 2025-08-29T00:00:00Z
+date: 2025-08-23T00:00:00Z
+lastmod: 2025-08-23T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
