@@ -92,7 +92,8 @@ params:
   # ----- ✅ 首页欢迎区域（模块化） -----
   homeInfoParams:
     Content: |
-      A curated collection of nylon 3D printing case studies and knowledge resources.
+      Nylon3DPrint.com is a curated collection of nylon 3D printing case studies and knowledge resources. This site is part of our printing services, and you can contact us directly to start your 3D printing project: info@nylon3dprint.com
+.
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
