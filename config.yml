@@ -43,7 +43,7 @@ params:
   showShareButtons: true                      # 显示社交分享按钮
   showReadingTime: true                       # 显示阅读时长
   ShowToc: true                               # 启用文章内目录（可在文章 front matter 单独关闭）
-  author: "Walter"                            # 默认作者（用于结构化数据和文章作者信息）
+  author: "Nylon3DPrint Team"                 # 默认作者（用于结构化数据和文章作者信息）
   favicon: "/images/favicon.ico"              # head.html 里会读取此字段
   ShowCodeCopyButtons: true                   # 代码块一键复制
 
@@ -61,19 +61,24 @@ params:
     publisherType: "Organization"             # 也可改为 "Person"
 
   # ----- ✅ 全站 SEO 元信息 -----
-  description: "Explore the architecture, automation, and monetization of scalable Hugo site networks. Learn how to build structured content systems, optimize SEO, and drive sustainable growth across multiple static sites."
+  description: "Industrial nylon 3D printing service (MJF & SLS) for PA12/PA11 parts. Durable, corrosion-resistant functional prototypes and production components for water treatment, robotics, automotive, and manufacturing."
   keywords:
-    - "Hugo site network"                  # Hugo 多站群
-    - "modular site architecture"         # 模块化建站架构
-    - "static site automation"            # 静态网站自动化
-    - "structured content strategy"       # 内容系统化运营
-    - "site monetization tactics"         # 站群变现策略
-    - "SEO ad optimization"               # SEO 广告优化
-    - "long-term content strategy"        # 长期主义内容战略
-    - "scalable multi-site system"        # 可扩展站群系统
-    - "technical site network monetization" # 技术型站群盈利路径
-    - "multi-site SEO strategy"           # 多站点 SEO 策略
-    - "build website with Hugo"           # Hugo 网站搭建
+    - "nylon 3d printing service"
+    - "SLS nylon 3D printing"
+    - "MJF nylon 3D printing"
+    - "PA12 nylon parts"
+    - "PA11 nylon parts"
+    - "industrial 3d printing"
+    - "custom nylon parts"
+    - "nylon rapid prototyping"
+    - "corrosion resistant nylon parts"
+    - "engineering grade nylon"
+    - "carbon fiber nylon 3d printing"
+    - "ESD safe nylon 3d printing"
+    - "glass filled nylon 3d printing"
+    - "functional 3d printed nylon"
+    - "water treatment 3d printing"
+    - "robotics 3d printed parts"
 
   # ✅ 默认社交分享图 / Fallback 图
   images:
@@ -87,7 +92,8 @@ params:
   # ----- ✅ 首页欢迎区域（模块化） -----
   homeInfoParams:
     Content: |
-
+      On-demand nylon 3D printing (MJF & SLS) — PA12/PA11, carbon-fiber, ESD, and glass-filled options.
+      Production-grade functional parts with fast lead times and consistent quality.
 
   # ========================
   # ✅ 广告系统配置（由 hugo-ad-modules 模块使用）
@@ -105,27 +111,27 @@ params:
     imageMap:
       ad-top:
         img: "/ads/top.webp"
-        link: "https://example.com/top"
+        link: "https://www.nylon3dprint.com/quote/"
         alt: "ad-top"
       ad-bottom:
         img: "/ads/bottom.webp"
-        link: "https://example.com/bottom"
+        link: "https://www.nylon3dprint.com/contact/"
         alt: "ad-bottom"
       ad-inline:
         img: "/ads/inline.webp"
-        link: "https://example.com/inline"
+        link: "https://www.nylon3dprint.com/services/nylon-3d-printing/"
         alt: "ad-inline"
       ad-home-inline:
         img: "/ads/home.webp"
-        link: "https://example.com/home"
+        link: "https://www.nylon3dprint.com/quote/"
         alt: "ad-home"
       ad-tags:
         img: "/ads/tags.webp"
-        link: "https://example.com/tags"
+        link: "https://www.nylon3dprint.com/materials/pa12-nylon/"
         alt: "ad-tags"
       ad-list-interval:
         img: "/ads/list.webp"
-        link: "https://example.com/list"
+        link: "https://www.nylon3dprint.com/case-studies/"
         alt: "ad-list-interval"
 
     # ----- ✅ Google AdSense 配置（adsense 模式专用） -----
