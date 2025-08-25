@@ -63,15 +63,6 @@ params:
     icon: "/images/logo-square.webp"          # ✅ 顶部品牌图标（与 publisher.logo 一致更好）
     iconHeight: 35
 
-  # —— 社交图标（按需补充）——
-  socialIcons:
-    - name: email
-      url: "mailto:info@nylon3dprint.com"
-    # - name: github
-    #   url: "https://github.com/nylon3dprint"
-    # - name: linkedin
-    #   url: "https://www.linkedin.com/company/nylon3dprint"
-
   # —— 封面图展示策略（列表/正文）——
   cover:
     responsiveImages: true       # ✅ 生成响应式封面
