@@ -164,18 +164,23 @@ Standard small tools ship fast; complex fixtures with inserts or special finishi
 ## Frequently asked questions
 
 **Are these tools “non-sparking”?**
+
 Plastics don’t create hot impact sparks the way ferrous metals can, and nylon striking faces are widely used to **reduce** spark risk. However, formal “non-sparking tool” definitions typically refer to **non-ferrous metal alloys** (Cu-Be, Al-bronze). Treat nylon tools as **spark-reduction**, and follow your site’s combustible controls. ([ccohs.ca][17])
 
 **What dose can the tools take?**
+
 There’s no single number—environment and chemistry matter. Lab work on **SLS PA12** shows measurable changes at high sterilization-scale doses (e.g., **\~200 kGy/20 Mrad**). For **adjacent** work (RP-controlled areas, not core internals), PA12 is commonly acceptable with inspection and replacement criteria. We’ll help you set those. ([usna.edu][9])
 
 **Will they hold torque?**
+
 Within reason. We design around **0.1–4 N·m** as the “sweet spot” for many hand ops, add **torque-limiters**, and validate on your joint. Use the table above only as a **starting point** and verify on your hardware.&#x20;
 
 **What about cleaning and decon?**
+
 Smooth surfaces, rounded transitions, and limited hollow cavities make parts easy to wipe, rinse, and survey. Prefer peroxide or site-approved agents; keep **bleach** exposure short and always rinse. ([www-pub.iaea.org][8], [Makerly][5])
 
 **Can you meet our QA expectations?**
+
 Yes for commercial and many augmented-quality jobs; for safety-related scope we align to **10 CFR 50 App. B / RG 1.28** via your CGD plan. ([NRC Web][15])
 
 ---
