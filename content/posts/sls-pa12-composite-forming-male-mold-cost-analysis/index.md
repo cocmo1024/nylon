@@ -2,8 +2,8 @@
 title: "Composite Forming Revolution: Lightweight Nylon Male Molds with Cost Analysis"
 slug: sls-pa12-composite-forming-male-mold-cost-analysis
 description: "SLS PA12 lightweight male molds for composite layup: vacuum-bagging compatibility, surface prep options, demold strategies, and side-by-side cost/time analysis vs aluminum tooling."
-date: 2025-08-22T00:00:00Z
-lastmod: 2025-08-22T00:00:00Z
+date: 2025-08-30T00:00:00Z
+lastmod: 2025-08-30T00:00:00Z
 author: szcomo
 keywords:
   - nylon 3d printing service
