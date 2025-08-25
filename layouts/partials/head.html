@@ -1,0 +1,96 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{{/* =========================================
+   Robots：生产环境且未显式 noindex 才允许 index
+   ========================================= */}}
+{{- $isProd := or hugo.IsProduction (eq site.Params.env "production") -}}
+{{- $allowIndex := not (.Params.robotsNoIndex | default false) -}}
+{{- $robots := cond (and $isProd $allowIndex) "index, follow" "noindex, nofollow" -}}
+<meta name="robots" content="{{ $robots }}">
+
+{{/* =================
+   Title（更稳写法）
+   ================= */}}
+<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ site.Title }}</title>
+
+{{/* =================
+   Meta Keywords
+   ================= */}}
+{{- $kws := cond (isset .Params "keywords") .Params.keywords .Params.tags -}}
+{{- if .IsHome -}}
+  {{ with site.Params.keywords }}<meta name="keywords" content="{{- delimit . ", " -}}">{{ end }}
+{{- else -}}
+  {{ with $kws }}<meta name="keywords" content="{{- delimit . ", " -}}">{{ end }}
+{{- end }}
+
+{{/* =================
+   Description
+   ================= */}}
+{{- $desc := "" -}}
+{{- if .Description -}}
+  {{- $desc = .Description -}}
+{{- else if or .IsPage .IsSection -}}
+  {{- $desc = ( .Summary | default (printf "%s - %s" .Title site.Title) ) -}}
+{{- else -}}
+  {{- $desc = site.Params.description -}}
+{{- end -}}
+<meta name="description" content="{{ $desc }}">
+
+{{/* =================
+   Author
+   ================= */}}
+<meta name="author" content="{{ partial "author.html" . }}">
+
+{{/* =========================================
+   Canonical：优先 front matter 的 canonicalURL
+   ========================================= */}}
+{{- $canon := cond (isset .Params "canonicalURL") (trim .Params.canonicalURL " ") .Permalink -}}
+<link rel="canonical" href="{{ $canon }}">
+
+{{/* ===========================================================
+   Google Search Console 验证（读取 params.analytics.google.SiteVerificationTag）
+   =========================================================== */}}
+{{- with site.Params.analytics.google.SiteVerificationTag }}
+  <meta name="google-site-verification" content="{{ . }}">
+{{- end }}
+
+{{/* ==========================
+   样式资源加载（按需可扩展）
+   ========================== */}}
+{{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
+{{- $reset := (resources.Get "css/core/reset.css") }}
+{{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
+{{- $chroma_styles := (resources.Get "css/includes/chroma-styles.css") }}
+{{- $chroma_mod := (resources.Get "css/includes/chroma-mod.css") }}
+{{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod) | resources.Concat "assets/css/core.css" | resources.Minify }}
+{{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
+{{- $stylesheet := (slice $core $extended) | resources.Concat "assets/css/stylesheet.css" }}
+
+{{- if not site.Params.assets.disableFingerprinting }}
+  {{- $stylesheet := $stylesheet | fingerprint }}
+  <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- else }}
+  <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{- end }}
+
+{{/* =========
+   Favicons
+   ========= */}}
+<link rel="icon" href="{{ site.Params.favicon | default "favicon.ico" | absURL }}">
+<meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#2e2e33" }}">
+
+{{/* ==========================
+   扩展 head 区域（自定义注入）
+   ========================== */}}
+{{- partial "extend_head.html" . -}}
+
+{{/* =========================================
+   仅生产环境输出：OG、Twitter、JSON-LD
+   ========================================= */}}
+{{- if $isProd -}}
+  {{- partial "templates/opengraph.html" . }}
+  {{- partial "templates/twitter_cards.html" . }}
+  {{- partial "templates/schema_json.html" . }}
+{{- end -}}

@@ -1,0 +1,141 @@
+{{/* ================================
+   Schema JSON-LD 结构化数据
+   - 首页：WebSite + Organization
+   - 列表页/文章页：BreadcrumbList
+   - 文章页：BlogPosting
+================================ */}}
+
+{{ if .IsHome }}
+
+  {{/* WebSite */}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.Title | jsonify }},
+    "url": {{ site.BaseURL | jsonify }},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {{ printf "%s?q={search_term_string}" site.BaseURL | jsonify }},
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  {{/* Organization（优先取 schema.sameAs，否则 SocialIcons） */}}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": {{ (site.Params.schema.publisherType | default "Organization") | title | jsonify }},
+    "name": {{ site.Title | jsonify }},
+    "url": {{ site.BaseURL | jsonify }},
+    "description": {{ site.Params.description | plainify | truncate 180 | jsonify }},
+    "logo": {{ (site.Params.publisher.logo | default "favicon.ico" | absURL) | jsonify }},
+    "sameAs": [
+      {{- if site.Params.schema.sameAs -}}
+        {{- range $i, $e := site.Params.schema.sameAs -}}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{- end -}}
+      {{- else if site.Params.SocialIcons -}}
+        {{- range $i, $e := site.Params.SocialIcons -}}{{ if $i }}, {{ end }}{{ $e.url | jsonify }}{{- end -}}
+      {{- end -}}
+    ]
+  }
+  </script>
+
+{{ else if (or .IsPage .IsSection) }}
+
+  {{/* ------------------------------
+      BreadcrumbList
+      - 修正：避免开头多余逗号；.Parent 为空的兜底；仅输出非空段
+  ------------------------------ */}}
+  {{- $parent := .Parent -}}
+  {{- $parentURL := cond (ne $parent nil) $parent.Permalink site.BaseURL -}}
+  {{- $url := replace $parentURL (printf "%s" site.BaseURL) "" -}}
+  {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
+  {{- $bc_list := (split $lang_url "/") -}}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {{- $first := true -}}
+      {{- $scratch := newScratch -}}
+      {{- range $index, $element := $bc_list -}}
+        {{- if gt (len $element) 0 -}}
+          {{- $scratch.Add "path" (printf "%s/" $element) -}}
+          {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
+          {{- if $bc_pg -}}
+            {{- if not $first }},{{ end -}}
+            {
+              "@type": "ListItem",
+              "position": {{ add 1 $index }},
+              "name": {{ $bc_pg.Name | jsonify }},
+              "item": {{ $bc_pg.Permalink | jsonify }}
+            }
+            {{- $first = false -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if not $first }},{{ end -}}
+      {
+        "@type": "ListItem",
+        "position": {{ add (len (where $bc_list "len" "gt" 0)) 1 }},
+        "name": {{ .Name | jsonify }},
+        "item": {{ .Permalink | jsonify }}
+      }
+    ]
+  }
+  </script>
+
+  {{ if .IsPage }}
+    {{/* ------------------------------
+        BlogPosting
+        - 修正：wordCount 输出为数字
+    ------------------------------ */}}
+    {{- $desc := cond (ne .Description "") (.Description | plainify) (.Summary | plainify) -}}
+    {{- $image := "" -}}
+    {{- if .Params.cover.image -}}
+      {{- $image = cond (ne .Params.cover.relative true) (.Params.cover.image | absURL) ((path.Join .RelPermalink .Params.cover.image) | absURL) -}}
+    {{- else -}}
+      {{- $images := partial "templates/_funcs/get-page-images" . -}}
+      {{- with index $images 0 -}}{{ $image = .Permalink }}{{- end -}}
+    {{- end -}}
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ .Title | plainify | jsonify }},
+      "description": {{ $desc | jsonify }},
+      "keywords": [
+        {{- if .Params.keywords -}}
+          {{- range $i, $e := .Params.keywords -}}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{- end -}}
+        {{- else -}}
+          {{- range $i, $e := .Params.tags -}}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{- end -}}
+        {{- end -}}
+      ],
+      "wordCount": {{ .WordCount }},
+      "inLanguage": {{ .Language.Lang | default site.LanguageCode | jsonify }},
+      {{- if $image -}}"image": {{ $image | jsonify }},{{- end }}
+      "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+      "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" | jsonify }},
+      "author": {
+        "@type": "Person",
+        "name": {{ (.Params.author | default site.Params.author) | jsonify }}
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": {{ .Permalink | jsonify }}
+      },
+      "publisher": {
+        "@type": {{ (site.Params.schema.publisherType | default "Organization") | title | jsonify }},
+        "name": {{ site.Title | jsonify }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ (site.Params.publisher.logo | default "favicon.ico" | absURL) | jsonify }}
+        }
+      }
+    }
+    </script>
+  {{ end }}
+{{ end }}
