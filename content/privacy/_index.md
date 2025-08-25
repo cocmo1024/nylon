@@ -11,7 +11,7 @@ keywords:
   - third-party ads
 robots: noindex, follow
 ---
-# Privacy Policy
+---
 
 **Effective Date:** August 25, 2025  
 
