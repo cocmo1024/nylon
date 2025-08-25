@@ -116,7 +116,7 @@ PV sites see hot roofs/racks by day, cold nights, dew/rain, and winter snaps. Bu
 
 ---
 
-## Example Spec Snippet (paste into your RFQ)
+## Example Spec Snippet
 
 ```
 Material: SLS PA12, black (UV-stabilized); dyed or pigmented black acceptable.
@@ -133,7 +133,7 @@ Quality: Lot traceability; visual AQL 1.0; dimensional spot-check on criticals.
 
 ---
 
-## Work With Us (U.S.-focused capacity)
+## Work With Us
 
 Send CAD (STEP/IGES) and site conditions (sun, temperature range, chemicals, target life) and we’ll return a **print + test** plan and a fast **pilot lot**.
 **Email:** **[info@nylon3dprint.com](mailto:info@nylon3dprint.com)**
