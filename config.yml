@@ -119,7 +119,7 @@ params:
   homeInfoParams:
     Content: |
       Nylon3DPrint.com is a curated collection of nylon 3D printing case studies and knowledge resources. 
-      This site is part of our printing services, and you can contact us directly to start your 3D printing project: info@nylon3dprint.com.
+      This site is part of our printing services, and you can contact us directly to start your 3D printing project: info@nylon3dprint.com
 
   # —— 站内搜索（Fuse.js 调优项；需要你有 content/search.md with `layout: "search"`）——
   fuseOpts:
