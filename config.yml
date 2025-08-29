@@ -2,7 +2,7 @@
 # ✅ 站点基础配置
 # ========================
 baseURL: "https://www.nylon3dprint.com/"             # 🚧 发布前请改为正式域名（需以 / 结尾）
-title: "Nylon3DPrint"                                 # 站点标题
+title: "Nylon 3D Printing Services | Nylon3DPrint"                                 # 站点标题
 languageCode: "en-US"                          # ✅ 使用标准 BCP-47 语言码
 defaultContentLanguage: "en"
 canonifyURLs: true
