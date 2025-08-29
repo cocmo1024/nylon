@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>Industrial Nylon 3D Printing</h1>
+  <p class="lead">Functional, durable parts — fast turnaround.</p>
+  <p class="actions">
+    <a class="btn primary" href="/contact/">Get a Quote</a>
+    <a class="btn" href="/cases/">See Case Studies</a>
+  </p>
+</section>
+
+<section class="home-grid">
+  <a class="card" href="/products/">
+    <h3>Products</h3><p>Printers, materials, post-processing.</p>
+  </a>
+  <a class="card" href="/solutions/">
+    <h3>Solutions</h3><p>Industry playbooks & ROI templates.</p>
+  </a>
+  <a class="card" href="/cases/">
+    <h3>Case Studies</h3><p>Real deployments & results.</p>
+  </a>
+  <a class="card" href="/docs/">
+    <h3>Docs</h3><p>Guides, specs, best practices.</p>
+  </a>
+</section>
+
+<section class="home-split">
+  <div>
+    <h2>Latest Case Studies</h2>
+    <ul>
+      {{ range first 3 (where site.RegularPages "Section" "cases") }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ else }}<li>（暂无案例）</li>{{ end }}
+    </ul>
+  </div>
+  <div>
+    <h2>From the Blog</h2>
+    <ul>
+      {{ range first 3 (where site.RegularPages "Section" "posts") }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ else }}<li>（暂无文章）</li>{{ end }}
+    </ul>
+  </div>
+</section>
+{{ end }}
