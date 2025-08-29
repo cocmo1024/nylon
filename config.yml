@@ -1,4 +1,4 @@
-# ========================
+# ======================== 
 # ✅ 站点基础配置
 # ========================
 baseURL: "https://www.nylon3dprint.com/"             # 🚧 发布前请改为正式域名（需以 / 结尾）
@@ -84,9 +84,26 @@ params:
     publisherType: "Organization"             # 也可改为 "Person"
     sameAs:                                   # ✅ 知识图谱外链（按需补充官方账号）
       - "https://www.nylon3dprint.com/"
+    website:
+      name: "Nylon3DPrint"
+      url: "https://www.nylon3dprint.com/"
+      potentialAction:
+        "@type": "SearchAction"
+        target: "https://www.nylon3dprint.com/search/?q={search_term_string}"
+        "query-input": "required name=search_term_string"
+    organization:
+      name: "Nylon3DPrint"
+      legalName: "Nylon3DPrint"
+      url: "https://www.nylon3dprint.com/"
+      logo: "https://www.nylon3dprint.com/images/logo-square.webp"
+      contactPoint:
+        - "@type": "ContactPoint"
+          contactType: "sales"
+          email: "info@nylon3dprint.com"
+          availableLanguage: ["en"]
 
     # ----- ✅ 全站 SEO 元信息 -----
-  description: "Nylon 3D printing services (SLS & MJF) for PA12/PA11 and CF/Glass-filled nylons. Production-grade functional parts with fast quotes and DFM support—water treatment, robotics, automotive, manufacturing."
+  description: "Nylon 3D printing services (SLS & MJF) for PA12/PA11 and CF/Glass-filled nylon. Production-grade parts with fast quotes, DFM support, and reliable lead times—water treatment, robotics, automotive, manufacturing."
   keywords:
     - "nylon 3d printing service"
     - "nylon sls 3d printing services"
@@ -265,6 +282,11 @@ sitemap:
   priority: 0.7
   filename: sitemap.xml
 
+cascade:
+  - _target:
+      path: "/search/**"
+    robots: "noindex, nofollow"
+
 # ========================
 # ✅ Markdown 渲染设置
 # ========================
@@ -272,3 +294,17 @@ markup:
   goldmark:
     renderer:
       unsafe: true       # 启用 HTML 代码渲染（如表格/iframe）
+
+minify:
+  tdewolff:
+    html:
+      keepWhitespace: false
+    css:
+      keepWhitespace: false
+    js:
+      keepWhitespace: false
+
+imaging:
+  quality: 82
+  resampleFilter: Lanczos
+  anchor: Smart
