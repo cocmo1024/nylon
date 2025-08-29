@@ -228,36 +228,13 @@ menu:
       weight: 1
     - name: "Archive"
       url: "/archives/"
-      weight: 80
+      weight: 2
     - name: "Tags"
       url: "/tags/"
-      weight: 85
+      weight: 3
     - name: "Search"
       url: "/search/"
-      weight: 90
-
-    # 新增：综合站点栏目
-    - name: "Products"
-      url: "/products/"
-      weight: 10
-    - name: "Solutions"
-      url: "/solutions/"
-      weight: 20
-    - name: "Case Studies"
-      url: "/cases/"
-      weight: 30
-    - name: "Docs"
-      url: "/docs/"
-      weight: 40
-    - name: "Blog"            # 如果你的博客在 /posts/
-      url: "/posts/"
-      weight: 50
-    - name: "About"
-      url: "/about/"
-      weight: 60
-    - name: "Contact"
-      url: "/contact/"
-      weight: 70
+      weight: 4
 
 # ========================
 # ✅ 自动相关文章推荐配置
