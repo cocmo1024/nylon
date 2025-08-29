@@ -85,25 +85,34 @@ params:
     sameAs:                                   # ✅ 知识图谱外链（按需补充官方账号）
       - "https://www.nylon3dprint.com/"
 
-  # ----- ✅ 全站 SEO 元信息 -----
-  description: "Industrial nylon 3D printing service (MJF & SLS) for PA12/PA11 parts. Durable, corrosion-resistant functional prototypes and production components for water treatment, robotics, automotive, and manufacturing."
+    # ----- ✅ 全站 SEO 元信息 -----
+  description: "Nylon 3D printing services (SLS & MJF) for PA12/PA11 and CF/Glass-filled nylons. Production-grade functional parts with fast quotes and DFM support—water treatment, robotics, automotive, manufacturing."
   keywords:
     - "nylon 3d printing service"
-    - "SLS nylon 3D printing"
-    - "MJF nylon 3D printing"
-    - "PA12 nylon parts"
-    - "PA11 nylon parts"
-    - "industrial 3d printing"
-    - "custom nylon parts"
-    - "nylon rapid prototyping"
-    - "corrosion resistant nylon parts"
-    - "engineering grade nylon"
-    - "carbon fiber nylon 3d printing"
-    - "ESD safe nylon 3d printing"
-    - "glass filled nylon 3d printing"
-    - "functional 3d printed nylon"
-    - "water treatment 3d printing"
-    - "robotics 3d printed parts"
+    - "nylon sls 3d printing services"
+    - "mjf nylon 3d printing service"
+    - "pa12 3d printing service"
+    - "pa11 3d printing service"
+    - "custom nylon parts manufacturing"
+    - "industrial nylon 3d printing"
+    - "carbon fiber nylon 3d printing service"
+    - "glass filled nylon 3d printing service"
+    - "esd nylon 3d printing service"
+    - "functional nylon parts"
+    - "nylon rapid prototyping service"
+    - "on-demand nylon 3d printing"
+    - "low-volume nylon manufacturing"
+    - "nylon 3d printing quote"
+    - "nylon 3d printing near me"
+    - "nylon sls service bureau"
+    - "nylon mjf service bureau"
+    - "water treatment nylon parts"
+    - "robotics nylon 3d printing"
+    - "automotive nylon 3d printing"
+    - "aerospace nylon 3d printing"
+    - "chemical resistant nylon parts"
+    - "heat resistant nylon parts"
+
 
   # ✅ 默认社交分享图 / Fallback 图
   images:
